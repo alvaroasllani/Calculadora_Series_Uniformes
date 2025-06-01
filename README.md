@@ -77,52 +77,6 @@ A = P × i / [1 - (1 + i)⁻ⁿ]
 A = F × i / [(1 + i)ⁿ - 1]
 ```
 
-## 🎯 Casos de uso
 
-- Cálculo de préstamos y financiamientos
-- Análisis de inversiones periódicas
-- Planificación de ahorros
-- Evaluación de rentas y anualidades
-- Estudios de ingeniería económica
 
-## 🛠️ Comandos disponibles
 
-```bash
-npm run dev      # Servidor de desarrollo
-npm run build    # Construcción para producción
-npm run preview  # Vista previa de la construcción
-npm run lint     # Verificación de código
-```
-
-## 📱 Capturas de pantalla
-
-La calculadora presenta una interfaz moderna con:
-
-- Fondo dinámico con gradientes animados
-- Selector intuitivo de variables
-- Campos de entrada validados
-- Resultados con fórmulas explicativas
-
-## 🤝 Contribuir
-
-Las contribuciones son bienvenidas. Para contribuir:
-
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
-
-## 👨‍💻 Autor
-
-**Álvaro Asllani**
-
-- GitHub: [@alvaroasllani](https://github.com/alvaroasllani)
-
----
-
-⭐ ¡Si este proyecto te fue útil, no olvides darle una estrella!
