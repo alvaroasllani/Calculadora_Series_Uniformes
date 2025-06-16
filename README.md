@@ -1,82 +1,171 @@
-# 📊 Calculadora de Series Uniformes
+# 📱 Calculadora Series Uniformes - PWA
 
-Una calculadora web moderna e interactiva para cálculos financieros de series uniformes, desarrollada con React y TailwindCSS.
+Una calculadora financiera moderna para series uniformes, desarrollada como Progressive Web App (PWA) que puede instalarse en dispositivos móviles y funcionar offline.
 
 ## ✨ Características
 
-- **Cálculos completos**: Calcula cualquier variable (P, F, A, i, n) conociendo las demás
-- **Interfaz moderna**: Diseño futurista con gradientes animados
-- **Validación en tiempo real**: Verificación de datos de entrada
-- **Fórmulas visibles**: Muestra la fórmula utilizada en cada cálculo
-- **Responsive**: Se adapta a cualquier dispositivo
-- **Método iterativo**: Cálculo preciso de tasas de interés
+- 🧮 **Calculadora completa**: Calcula P, F, A, i, n para series uniformes
+- 📱 **PWA**: Instalable en dispositivos móviles
+- 🌐 **Offline**: Funciona sin conexión a internet
+- 🎨 **Diseño moderno**: Interfaz atractiva con gradientes animados
+- 📊 **Responsivo**: Se adapta a cualquier tamaño de pantalla
+- ⚡ **Rápido**: Construido con React + Vite
 
-## 🧮 Variables que calcula
+## 🚀 Despliegue en Vercel
 
-- **P (Valor Presente)**: Valor actual de la serie de pagos
-- **F (Valor Futuro)**: Valor futuro de la serie de pagos
-- **A (Anualidad)**: Monto de cada pago periódico
-- **i (Tasa de Interés)**: Tasa de interés por período (%)
-- **n (Períodos)**: Número total de períodos
+### Opción 1: Despliegue directo desde GitHub
 
-## 🚀 Instalación y uso
+1. Sube tu código a un repositorio de GitHub
+2. Ve a [vercel.com](https://vercel.com) y crea una cuenta
+3. Haz clic en "New Project"
+4. Importa tu repositorio de GitHub
+5. Vercel detectará automáticamente que es un proyecto Vite
+6. Haz clic en "Deploy"
 
-### Prerrequisitos
-
-- Node.js (versión 16 o superior)
-- npm o yarn
-
-### Instalación
+### Opción 2: Despliegue con Vercel CLI
 
 ```bash
-# Clonar el repositorio
-git clone https://github.com/alvaroasllani/Calculadora_Series_Uniformes.git
+# Instalar Vercel CLI
+npm i -g vercel
 
-# Navegar al directorio
-cd Calculadora_Series_Uniformes
+# Hacer login
+vercel login
 
+# Desplegar
+vercel
+
+# Para producción
+vercel --prod
+```
+
+## 📱 Instalación como App Móvil
+
+Una vez desplegado en Vercel, los usuarios podrán:
+
+1. **En Android (Chrome/Edge)**:
+
+   - Visitar la URL de tu app
+   - Aparecerá un botón "Instalar App" en la esquina superior derecha
+   - O usar el menú del navegador → "Instalar app" o "Agregar a pantalla de inicio"
+
+2. **En iOS (Safari)**:
+
+   - Visitar la URL de tu app
+   - Tocar el botón de compartir (cuadrado con flecha hacia arriba)
+   - Seleccionar "Agregar a pantalla de inicio"
+
+3. **En Desktop**:
+   - Aparecerá un ícono de instalación en la barra de direcciones
+   - O usar el menú del navegador para instalar
+
+## 🛠️ Desarrollo Local
+
+```bash
 # Instalar dependencias
 npm install
 
-# Ejecutar en modo desarrollo
+# Ejecutar en desarrollo
 npm run dev
+
+# Construir para producción
+npm run build
+
+# Vista previa de la build
+npm run preview
 ```
 
-La aplicación estará disponible en `http://localhost:5173`
+## 📁 Estructura del Proyecto
 
-## 🔧 Tecnologías utilizadas
+```
+├── public/
+│   ├── icons/           # Iconos PWA generados
+│   ├── manifest.json    # Configuración PWA
+│   ├── sw.js           # Service Worker
+│   └── favicon.svg     # Favicon
+├── src/
+│   ├── components/
+│   │   ├── SeriesUniformsCalculator.jsx
+│   │   └── InstallPWA.jsx
+│   ├── App.jsx
+│   └── main.jsx
+└── index.html          # HTML principal con meta tags PWA
+```
 
-- **React 19**: Biblioteca de JavaScript para la interfaz de usuario
-- **TailwindCSS 3.3**: Framework de CSS para el diseño
-- **Vite**: Herramienta de construcción y desarrollo
-- **PostCSS**: Procesamiento de CSS
+## 🔧 Configuración PWA
 
-## 📐 Fórmulas implementadas
+La aplicación incluye:
+
+- ✅ **Manifest.json**: Configuración de la app (nombre, iconos, colores)
+- ✅ **Service Worker**: Para funcionalidad offline
+- ✅ **Iconos**: Múltiples tamaños para diferentes dispositivos
+- ✅ **Meta tags**: Para iOS y Android
+- ✅ **Botón de instalación**: Componente React personalizado
+
+## 🌟 Características Técnicas
+
+- **Framework**: React 19 + Vite
+- **Estilos**: Tailwind CSS
+- **PWA**: Manifest + Service Worker
+- **Iconos**: SVG escalables
+- **Responsivo**: Mobile-first design
+- **Offline**: Cache de recursos estáticos
+
+## 📊 Fórmulas Implementadas
 
 ### Valor Presente
 
 ```
-P = A × [1 - (1 + i)⁻ⁿ] / i
+P = A × [1 - (1 + i)^(-n)] / i
 ```
 
 ### Valor Futuro
 
 ```
-F = A × [(1 + i)ⁿ - 1] / i
+F = A × [(1 + i)^n - 1] / i
 ```
 
-### Anualidad desde Valor Presente
+### Anualidad desde P
 
 ```
-A = P × i / [1 - (1 + i)⁻ⁿ]
+A = P × i / [1 - (1 + i)^(-n)]
 ```
 
-### Anualidad desde Valor Futuro
+### Anualidad desde F
 
 ```
-A = F × i / [(1 + i)ⁿ - 1]
+A = F × i / [(1 + i)^n - 1]
 ```
 
+## 🎯 Uso
 
+1. Selecciona la variable que deseas calcular (P, F, A, i, n)
+2. Para A, i, n: elige si usar Valor Presente o Futuro
+3. Ingresa los valores conocidos
+4. Haz clic en "CALCULAR"
+5. Ve el resultado con la fórmula utilizada
 
+## 📱 Instalación Móvil - Detalles
 
+Cuando los usuarios visiten tu app desplegada en Vercel:
+
+- **Detección automática**: La app detecta si puede ser instalada
+- **Botón personalizado**: Aparece "Instalar App" cuando está disponible
+- **Experiencia nativa**: Una vez instalada, se comporta como una app nativa
+- **Icono en escritorio**: Aparece en la pantalla de inicio del dispositivo
+- **Splash screen**: Pantalla de carga personalizada
+- **Modo standalone**: Se ejecuta sin la barra del navegador
+
+## 🔍 Verificación PWA
+
+Para verificar que tu PWA está correctamente configurada:
+
+1. Abre Chrome DevTools (F12)
+2. Ve a la pestaña "Application"
+3. Revisa:
+   - **Manifest**: Debe mostrar toda la información
+   - **Service Workers**: Debe estar registrado y activo
+   - **Storage**: Debe mostrar el cache
+
+## 🚀 ¡Listo para usar!
+
+Tu calculadora ahora es una PWA completa que puede ser instalada en cualquier dispositivo y funcionar offline. ¡Perfecto para estudiantes y profesionales de finanzas!

@@ -1,0 +1,47 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <rect width="512" height="512" rx="76.8" fill="url(#grad)"/>
+    <rect x="76.8" y="102.4" width="358.4" height="76.8" rx="10.24" fill="white" opacity="0.9"/>
+    <text x="256" y="153.6" text-anchor="middle" fill="#1a1a2e" font-family="Arial, sans-serif" font-size="40.96" font-weight="bold">123.45</text>
+    
+    <!-- Botones de calculadora -->
+    <g fill="white" opacity="0.8">
+      <rect x="76.8" y="204.8" width="76.8" height="51.2" rx="5.12"/>
+      <rect x="166.4" y="204.8" width="76.8" height="51.2" rx="5.12"/>
+      <rect x="256" y="204.8" width="76.8" height="51.2" rx="5.12"/>
+      <rect x="345.6" y="204.8" width="76.8" height="51.2" rx="5.12"/>
+      
+      <rect x="76.8" y="268.8" width="76.8" height="51.2" rx="5.12"/>
+      <rect x="166.4" y="268.8" width="76.8" height="51.2" rx="5.12"/>
+      <rect x="256" y="268.8" width="76.8" height="51.2" rx="5.12"/>
+      <rect x="345.6" y="268.8" width="76.8" height="51.2" rx="5.12"/>
+      
+      <rect x="76.8" y="332.8" width="76.8" height="51.2" rx="5.12"/>
+      <rect x="166.4" y="332.8" width="76.8" height="51.2" rx="5.12"/>
+      <rect x="256" y="332.8" width="76.8" height="51.2" rx="5.12"/>
+      <rect x="345.6" y="332.8" width="166.4" height="51.2" rx="5.12"/>
+    </g>
+    
+    <!-- Símbolos en los botones -->
+    <g fill="#1a1a2e" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">
+      <text x="115.2" y="235.52" font-size="25.6">7</text>
+      <text x="204.8" y="235.52" font-size="25.6">8</text>
+      <text x="294.4" y="235.52" font-size="25.6">9</text>
+      <text x="384" y="235.52" font-size="25.6">÷</text>
+      
+      <text x="115.2" y="299.52" font-size="25.6">4</text>
+      <text x="204.8" y="299.52" font-size="25.6">5</text>
+      <text x="294.4" y="299.52" font-size="25.6">6</text>
+      <text x="384" y="299.52" font-size="25.6">×</text>
+      
+      <text x="115.2" y="363.52" font-size="25.6">1</text>
+      <text x="204.8" y="363.52" font-size="25.6">2</text>
+      <text x="294.4" y="363.52" font-size="25.6">3</text>
+      <text x="428.8" y="363.52" font-size="25.6">=</text>
+    </g>
+  </svg>

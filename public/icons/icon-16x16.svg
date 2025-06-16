@@ -1,0 +1,47 @@
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <rect width="16" height="16" rx="2.4" fill="url(#grad)"/>
+    <rect x="2.4" y="3.2" width="11.2" height="2.4" rx="0.32" fill="white" opacity="0.9"/>
+    <text x="8" y="4.8" text-anchor="middle" fill="#1a1a2e" font-family="Arial, sans-serif" font-size="1.28" font-weight="bold">123.45</text>
+    
+    <!-- Botones de calculadora -->
+    <g fill="white" opacity="0.8">
+      <rect x="2.4" y="6.4" width="2.4" height="1.6" rx="0.16"/>
+      <rect x="5.2" y="6.4" width="2.4" height="1.6" rx="0.16"/>
+      <rect x="8" y="6.4" width="2.4" height="1.6" rx="0.16"/>
+      <rect x="10.8" y="6.4" width="2.4" height="1.6" rx="0.16"/>
+      
+      <rect x="2.4" y="8.4" width="2.4" height="1.6" rx="0.16"/>
+      <rect x="5.2" y="8.4" width="2.4" height="1.6" rx="0.16"/>
+      <rect x="8" y="8.4" width="2.4" height="1.6" rx="0.16"/>
+      <rect x="10.8" y="8.4" width="2.4" height="1.6" rx="0.16"/>
+      
+      <rect x="2.4" y="10.4" width="2.4" height="1.6" rx="0.16"/>
+      <rect x="5.2" y="10.4" width="2.4" height="1.6" rx="0.16"/>
+      <rect x="8" y="10.4" width="2.4" height="1.6" rx="0.16"/>
+      <rect x="10.8" y="10.4" width="5.2" height="1.6" rx="0.16"/>
+    </g>
+    
+    <!-- Símbolos en los botones -->
+    <g fill="#1a1a2e" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">
+      <text x="3.6" y="7.36" font-size="0.8">7</text>
+      <text x="6.4" y="7.36" font-size="0.8">8</text>
+      <text x="9.2" y="7.36" font-size="0.8">9</text>
+      <text x="12" y="7.36" font-size="0.8">÷</text>
+      
+      <text x="3.6" y="9.36" font-size="0.8">4</text>
+      <text x="6.4" y="9.36" font-size="0.8">5</text>
+      <text x="9.2" y="9.36" font-size="0.8">6</text>
+      <text x="12" y="9.36" font-size="0.8">×</text>
+      
+      <text x="3.6" y="11.36" font-size="0.8">1</text>
+      <text x="6.4" y="11.36" font-size="0.8">2</text>
+      <text x="9.2" y="11.36" font-size="0.8">3</text>
+      <text x="13.4" y="11.36" font-size="0.8">=</text>
+    </g>
+  </svg>
